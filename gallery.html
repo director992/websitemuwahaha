@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Youth Medical Association International</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .gallery-item {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-elegant);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            background-color: var(--light-blue);
+            position: relative;
+        }
+        
+        .gallery-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(30, 58, 138, 0.8), rgba(220, 38, 38, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-image::after {
+            opacity: 1;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--white);
+            text-align: center;
+            z-index: 3;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-info {
+            padding: 1.5rem;
+        }
+        
+        .gallery-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-info p {
+            color: var(--cool-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .category-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            background: var(--white);
+            border: 2px solid var(--border-light);
+            border-radius: 25px;
+            color: var(--cool-gray);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-blue);
+            color: var(--white);
+            border-color: var(--primary-blue);
+        }
+        
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .lightbox-close:hover {
+            color: var(--crimson);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/yma-logo.jpg" alt="YMA Logo" onerror="this.style.display='none'">
+                <span class="logo-text">YMA International</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="chapters.html" class="nav-link">Chapters</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/IMG_0105.JPG');">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Photo Gallery</h1>
+                <p>Capturing moments from our medical education journey and community impact</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Journey in Pictures</h2>
+                <p class="section-subtitle">From hands-on medical training to community outreach, explore the impactful moments that define YMA International</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Photos</button>
+                <button class="filter-btn" data-category="training">Medical Training</button>
+                <button class="filter-btn" data-category="hospital">Hospital Visits</button>
+                <button class="filter-btn" data-category="presentations">Presentations</button>
+                <button class="filter-btn" data-category="community">Community</button>
+                <button class="filter-btn" data-category="events">Events</button>
+            </div>
+
+            <!-- Photo Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photos will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section section" style="background-image: url('images/IMG_0455.JPG');">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Medical Community</h2>
+                <p>Be part of the next generation of medical leaders making a difference worldwide</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Youth Medical Association International</h3>
+                    <p>Empowering the next generation of medical professionals through hands-on experience, education, and global collaboration.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="chapters.html">Chapters</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Medical Training</a></li>
+                        <li><a href="#">Hospital Visits</a></li>
+                        <li><a href="#">Research Projects</a></li>
+                        <li><a href="#">Community Outreach</a></li>
+                        <li><a href="#">Global Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@ymainternational.org">info@ymainternational.org</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-8900</a></li>
+                        <li>Global Headquarters</li>
+                        <li>Medical Education Center</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Youth Medical Association International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        // Auto-detect and load all photos from images directory
+        const photoCategories = {
+            'training': ['medical-training', 'training', 'hands-on', 'practice'],
+            'hospital': ['hospital', 'visit', 'facility', 'clinical'],
+            'presentations': ['presentation', 'session', 'workshop', 'lecture'],
+            'community': ['group', 'community', 'team', 'networking'],
+            'events': ['event', 'ceremony', 'celebration', 'conference']
+        };
+
+        // Updated photos array with your actual photo filenames
+        const photos = [
+            // Medical Facility Visits & Hospital Tours
+            {
+                src: 'images/IMG_0027.JPG',
+                title: 'YMA Medical Facility Visit',
+                description: 'YMA members visiting modern medical facilities with distinctive red architectural elements',
+                category: 'hospital'
+            },
+            {
+                src: 'images/IMG_0105.JPG',
+                title: 'NYU College of Dentistry Group Photo',
+                description: 'Large group photo at NYU College of Dentistry showcasing our partnership with leading medical institutions',
+                category: 'hospital'
+            },
+            {
+                src: 'images/IMG_0168.JPG',
+                title: 'Medical Facility Interior',
+                description: 'YMA members exploring modern medical facility interiors and learning about healthcare infrastructure',
+                category: 'hospital'
+            },
+            {
+                src: 'images/IMG_0111.JPG',
+                title: 'Medical Facility Tour',
+                description: 'Students touring medical facilities and learning about modern healthcare environments',
+                category: 'hospital'
+            },
+            
+            // Educational Presentations & Workshops
+            {
+                src: 'images/IMG_0038.JPG',
+                title: 'Educational Presentation Session',
+                description: 'Students attending educational presentations by medical professionals and researchers',
+                category: 'presentations'
+            },
+            {
+                src: 'images/IMG_0039.JPG',
+                title: 'Medical Workshop',
+                description: 'Interactive workshop session with medical professionals presenting to YMA students',
+                category: 'presentations'
+            },
+            {
+                src: 'images/IMG_0455.JPG',
+                title: 'AI in Biomedical Research Presentation',
+                description: 'Two presenters leading a session on AI applications in biomedical research',
+                category: 'presentations'
+            },
+            {
+                src: 'images/IMG_0144.JPG',
+                title: 'Medical Lecture',
+                description: 'Students attending a comprehensive medical lecture in a professional auditorium setting',
+                category: 'presentations'
+            },
+            
+            // Hands-on Medical Training
+            {
+                src: 'images/IMG_0058.JPG',
+                title: 'Hands-On Medical Training',
+                description: 'Students participating in practical medical training sessions and skill-building activities',
+                category: 'training'
+            },
+            
+            // Community & Group Activities
+            {
+                src: 'images/IMG_0079.JPG',
+                title: 'YMA Volunteer Team',
+                description: 'Dedicated YMA volunteers in purple uniforms working together to support medical education',
+                category: 'community'
+            },
+            {
+                src: 'images/IMG_0094.JPG',
+                title: 'Student Networking',
+                description: 'YMA students building connections and sharing experiences in medical education',
+                category: 'community'
+            },
+            {
+                src: 'images/Copy of IMG_6946.HEIC',
+                title: 'YMA Group Photo',
+                description: 'YMA members building connections and fostering a supportive community of future medical professionals',
+                category: 'community'
+            },
+            {
+                src: 'images/IMG_0068 (1).JPG',
+                title: 'Medical Facility Group',
+                description: 'YMA leadership team at a medical facility during educational visits',
+                category: 'community'
+            },
+            
+            // YMA India Chapter Activities
+            {
+                src: 'images/20250419_175815_Original.jpeg',
+                title: 'YMA India Group Activities',
+                description: 'YMA India chapter members engaged in group activities and community building initiatives',
+                category: 'community'
+            },
+            {
+                src: 'images/IMG_2351.jpg',
+                title: 'YMA India Medical Education',
+                description: 'YMA India chapter participating in medical education and training programs',
+                category: 'training'
+            },
+            {
+                src: 'images/IMG_2938.jpg',
+                title: 'YMA India Community Outreach',
+                description: 'YMA India chapter conducting community health awareness and outreach programs',
+                category: 'community'
+            },
+            {
+                src: 'images/IMG_9200 (1).jpg',
+                title: 'YMA India Medical Training Session',
+                description: 'YMA India chapter members participating in hands-on medical training and skill development',
+                category: 'training'
+            },
+            {
+                src: 'images/3822e3c4-8c45-495c-bfc6-e156509c705c.JPG',
+                title: 'YMA India Chapter Meeting',
+                description: 'YMA India chapter conducting educational meetings and student mentorship sessions',
+                category: 'presentations'
+            }
+        ];
+
+        // Function to load gallery
+        function loadGallery(category = 'all') {
+            const galleryGrid = document.getElementById('galleryGrid');
+            galleryGrid.innerHTML = '';
+
+            const filteredPhotos = category === 'all' ? photos : photos.filter(photo => photo.category === category);
+
+            filteredPhotos.forEach((photo, index) => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item';
+                galleryItem.innerHTML = `
+                    <div class="gallery-image" style="background-image: url('${photo.src}')">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                            <p>Click to view</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>${photo.title}</h3>
+                        <p>${photo.description}</p>
+                    </div>
+                `;
+                
+                galleryItem.addEventListener('click', () => openLightbox(photo.src));
+                galleryGrid.appendChild(galleryItem);
+            });
+        }
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                loadGallery(btn.dataset.category);
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            lightboxImage.src = imageSrc;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+        }
+
+        document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeLightbox();
+        });
+
+        // Mobile navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Initialize gallery
+        loadGallery();
+    </script>
+</body>
+</html> 

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery - Youth Medical Association International</title>
+    <title>Photo Gallery | Youth Medical Association</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -79,7 +80,7 @@
         }
         
         .gallery-info h3 {
-            font-family: var(--font-display);
+            font-family: var(--font-sans);
             font-size: 1.25rem;
             font-weight: 600;
             color: var(--navy);
@@ -168,8 +169,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/yma-logo.jpg" alt="YMA Logo" onerror="this.style.display='none'">
-                <span class="logo-text">YMA International</span>
+                <img src="images/logo/YMA Logo.png" alt="YMA Logo" onerror="this.style.display='none'">
+                <span class="logo-text">Youth Medical Association</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -177,6 +178,11 @@
                 <li><a href="chapters.html" class="nav-link">Chapters</a></li>
                 <li><a href="staff.html" class="nav-link">Staff</a></li>
                 <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="press.html" class="nav-link">Press</a></li>
+                <li><a href="yai.html" class="nav-link">Youth Academic Initiative</a></li>
+                <li><a href="mayor-office.html" class="nav-link">Office of the Mayor</a></li>
+                <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
+                <li><a href="mailto:director@yma.institute" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -201,7 +207,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Journey in Pictures</h2>
-                <p class="section-subtitle">From hands-on medical training to community outreach, explore the impactful moments that define YMA International</p>
+                <p class="section-subtitle">From hands-on medical training to community outreach, explore the impactful moments that define Youth Medical Association</p>
             </div>
 
             <!-- Category Filters -->
@@ -211,7 +217,6 @@
                 <button class="filter-btn" data-category="hospital">Hospital Visits</button>
                 <button class="filter-btn" data-category="presentations">Presentations</button>
                 <button class="filter-btn" data-category="community">Community</button>
-                <button class="filter-btn" data-category="events">Events</button>
             </div>
 
             <!-- Photo Gallery Grid -->
@@ -228,7 +233,7 @@
                 <h2>Join Our Medical Community</h2>
                 <p>Be part of the next generation of medical leaders making a difference worldwide</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Apply Now</a>
+                    <a href="https://forms.gle/try1GaJN9mwxpBHA8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Apply Now</a>
                     <a href="about.html" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
@@ -241,12 +246,11 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Youth Medical Association International</h3>
-                    <p>Empowering the next generation of medical professionals through hands-on experience, education, and global collaboration.</p>
+                    <p style="font-style: italic; margin-bottom: 0.5rem;">Passion. Perceive. Pursue.</p>
+                    <p>Supporting students interested in medicine through hands-on experience, education, and collaboration.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yma_intl/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/youth-medical-association-international" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -257,30 +261,21 @@
                         <li><a href="chapters.html">Chapters</a></li>
                         <li><a href="staff.html">Staff</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="yai.html">Youth Academic Initiative</a></li>
+                        <li><a href="mayor-office.html">Office of the Mayor</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Programs</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Medical Training</a></li>
-                        <li><a href="#">Hospital Visits</a></li>
-                        <li><a href="#">Research Projects</a></li>
-                        <li><a href="#">Community Outreach</a></li>
-                        <li><a href="#">Global Partnerships</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li><a href="mailto:info@ymainternational.org">info@ymainternational.org</a></li>
-                        <li><a href="tel:+1234567890">+1 (234) 567-8900</a></li>
-                        <li>Global Headquarters</li>
-                        <li>Medical Education Center</li>
-                    </ul>
+                    <h3>Get Involved</h3>
+                    <p><a href="https://forms.gle/try1GaJN9mwxpBHA8" target="_blank" rel="noopener noreferrer">Join as a Member</a></p>
+                    <p><a href="https://forms.gle/r2pxWtxwG7B6njM98" target="_blank" rel="noopener noreferrer">Start a Chapter</a></p>
+                    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScIdRBzFzZrx4ONaxSOiyH2w5i6WvKl9VqKjoDZ_yZzNYQlCA/viewform?usp=sharing&ouid=104748297163574303489" target="_blank" rel="noopener noreferrer">Apply for Staff</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Youth Medical Association International. All rights reserved.</p>
+                <p>&copy; 2026 Youth Medical Association International. All rights reserved.</p>
+                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3)</p>
             </div>
         </div>
     </footer>
@@ -299,8 +294,7 @@
             'training': ['medical-training', 'training', 'hands-on', 'practice'],
             'hospital': ['hospital', 'visit', 'facility', 'clinical'],
             'presentations': ['presentation', 'session', 'workshop', 'lecture'],
-            'community': ['group', 'community', 'team', 'networking'],
-            'events': ['event', 'ceremony', 'celebration', 'conference']
+            'community': ['group', 'community', 'team', 'networking']
         };
 
         // Updated photos array with your actual photo filenames
@@ -315,13 +309,13 @@
             {
                 src: 'images/IMG_0105.JPG',
                 title: 'NYU College of Dentistry Group Photo',
-                description: 'Large group photo at NYU College of Dentistry showcasing our partnership with leading medical institutions',
+                description: 'Large group photo at NYU College of Dentistry showcasing our partnership with medical institutions',
                 category: 'hospital'
             },
             {
                 src: 'images/IMG_0168.JPG',
-                title: 'Medical Facility Interior',
-                description: 'YMA members exploring modern medical facility interiors and learning about healthcare infrastructure',
+                title: 'Mount Sinai Biomedical Engineering Institute',
+                description: 'YMA members exploring the Mount Sinai Biomedical Engineering Institute and learning about healthcare infrastructure.',
                 category: 'hospital'
             },
             {
@@ -346,14 +340,14 @@
             },
             {
                 src: 'images/IMG_0455.JPG',
-                title: 'AI in Biomedical Research Presentation',
-                description: 'Two presenters leading a session on AI applications in biomedical research',
+                title: 'Neurology Event at NYU Langone',
+                description: 'Rayhan Mehal addressing students at NYU Langone regarding the Neurology event, alongside three doctors. Over 70 students from different countries attended, including Canada.',
                 category: 'presentations'
             },
             {
                 src: 'images/IMG_0144.JPG',
-                title: 'Medical Lecture',
-                description: 'Students attending a comprehensive medical lecture in a professional auditorium setting',
+                title: 'Educational VR Demo at Mount Sinai',
+                description: "YMA's Victor Li participates in an educational VR demo at Mount Sinai.",
                 category: 'presentations'
             },
             
@@ -368,20 +362,14 @@
             // Community & Group Activities
             {
                 src: 'images/IMG_0079.JPG',
-                title: 'YMA Volunteer Team',
-                description: 'Dedicated YMA volunteers in purple uniforms working together to support medical education',
+                title: 'NYU College of Dentistry Tour',
+                description: 'YMA students touring NYU College of Dentistry alongside current NYU Dentistry students.',
                 category: 'community'
             },
             {
                 src: 'images/IMG_0094.JPG',
                 title: 'Student Networking',
                 description: 'YMA students building connections and sharing experiences in medical education',
-                category: 'community'
-            },
-            {
-                src: 'images/Copy of IMG_6946.HEIC',
-                title: 'YMA Group Photo',
-                description: 'YMA members building connections and fostering a supportive community of future medical professionals',
                 category: 'community'
             },
             {
@@ -420,6 +408,222 @@
                 src: 'images/3822e3c4-8c45-495c-bfc6-e156509c705c.JPG',
                 title: 'YMA India Chapter Meeting',
                 description: 'YMA India chapter conducting educational meetings and student mentorship sessions',
+                category: 'presentations'
+            },
+            {
+                src: 'images/bake sales/bake sale 1.JPG',
+                title: 'YMA Bake Sale',
+                description: 'YMA members running a bake sale to raise funds for medical education programs and community outreach',
+                category: 'community'
+            },
+            {
+                src: 'images/bake sales/bake sale 2.JPG',
+                title: 'Bake Sale Fundraiser',
+                description: 'Community bake sale event supporting Youth Medical Association programs and student initiatives',
+                category: 'community'
+            },
+            {
+                src: 'images/gift bag.JPG',
+                title: 'NYU Langone Goody Bag',
+                description: 'NYU Langone provides YMA members with a goody bag and snack after an event.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/IMG_9200.jpg',
+                title: 'Community Volunteering with Children',
+                description: 'YMA members volunteering with children in the community.',
+                category: 'community'
+            },
+            {
+                src: 'images/University of Washington Tour 1.JPEG',
+                title: 'University of Washington Tour',
+                description: 'YMA members on a tour of the University of Washington.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/yma-team.jpg',
+                title: 'YMA Team',
+                description: 'The Youth Medical Association team.',
+                category: 'community'
+            },
+            {
+                src: 'images/yma fun activity.JPG',
+                title: 'YMA Fun Activity',
+                description: 'YMA members participating in a fun activity and community bonding event.',
+                category: 'community'
+            },
+            {
+                src: 'images/columbia-1.jpg',
+                title: 'Columbia University Event',
+                description: 'YMA members at a Department of Career Development event at Columbia University, touring the campus and learning about opportunities.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/columbia-2.jpg',
+                title: 'Columbia University Tour',
+                description: 'YMA members touring Columbia University as part of the Department of Career Development, learning about opportunities across engineering, computer science, law, and business.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/yma cpr training at columbia.JPG',
+                title: 'YMA CPR Training at Columbia',
+                description: 'YMA members participating in CPR and first aid training at Columbia University.',
+                category: 'training'
+            },
+            {
+                src: 'images/yma at nyu langone.JPG',
+                title: 'YMA at NYU Langone',
+                description: 'Over 70 students from across the world joined YMA for this event at NYU Langone.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/rayhan mehal shaking hands with dr. Kurzweil.JPG',
+                title: 'Rayhan Mehal with Dr. Kurzweil',
+                description: 'YMA founder Rayhan Mehal shaking hands with Dr. Kurzweil.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/YMA community day at columbia.JPG',
+                title: 'YMA Community Day at Columbia',
+                description: 'YMA members at Community Day at Columbia University.',
+                category: 'community'
+            },
+            {
+                src: 'images/Kimberly Nguyen speaking with chapter applicants regarding starting and operating a chapter.JPG',
+                title: 'Kimberly Nguyen with Chapter Applicants',
+                description: 'Kimberly Nguyen speaking with chapter applicants regarding starting and operating a chapter.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/YMA Event at the Icahn School of Medicine.JPG',
+                title: 'YMA Event at the Icahn School of Medicine',
+                description: 'YMA members at an event at the Icahn School of Medicine at Mount Sinai.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/bake sales/yma leadership at nyu langone .JPG',
+                title: 'YMA Leadership at NYU Langone',
+                description: 'YMA leadership team at NYU Langone.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/YMA EMS training.JPG',
+                title: 'YMA EMS Training',
+                description: 'YMA members participating in Emergency Medical Services (EMS) training.',
+                category: 'training'
+            },
+            {
+                src: 'images/fun balloon at columbia.JPG',
+                title: 'Fun Balloon at Columbia',
+                description: 'YMA members at a fun balloon activity at Columbia University.',
+                category: 'community'
+            },
+            {
+                src: 'images/yma leadership team at nyu langone.JPG',
+                title: 'YMA Leadership Team at NYU Langone',
+                description: 'The YMA leadership team at NYU Langone.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/research experiment with yma students in new zealand.png',
+                title: 'Research Experiment with YMA Students in New Zealand',
+                description: 'YMA students in New Zealand participating in a research experiment.',
+                category: 'training'
+            },
+            {
+                src: 'images/yma dentistry research lab.JPG',
+                title: 'YMA Dentistry Research Lab',
+                description: 'YMA members at a dentistry research lab.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/volunteering with children.jpg',
+                title: 'Volunteering with Children',
+                description: 'YMA members volunteering with children in the community.',
+                category: 'community'
+            },
+            {
+                src: 'images/Blood draw demonstration on Rayhan Mehal at NYU .JPG',
+                title: 'Blood Draw Demonstration at NYU',
+                description: 'Blood draw demonstration on YMA founder Rayhan Mehal at NYU.',
+                category: 'training'
+            },
+            {
+                src: 'images/nyu orthopedics panel.JPG',
+                title: 'NYU Orthopedics Panel',
+                description: 'YMA members at the NYU orthopedics panel.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/rayhan mehal with nyu dentistry students.JPG',
+                title: 'Rayhan Mehal with NYU Dentistry Students',
+                description: 'YMA founder Rayhan Mehal with NYU College of Dentistry students.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/YMA SWHS club meeting.JPG',
+                title: 'YMA SWHS Club Meeting',
+                description: 'YMA club meeting at SWHS.',
+                category: 'community'
+            },
+            {
+                src: 'images/YMA University of Washington tour 2 .jpg',
+                title: 'University of Washington Tour 2',
+                description: 'YMA members on a tour of the University of Washington.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/YMA Team picnic .JPG',
+                title: 'YAI-YMA Team Picnic',
+                description: 'YAI and YMA team at a picnic event.',
+                category: 'community'
+            },
+            {
+                src: 'images/yma team picnic 2 .JPG',
+                title: 'YAI-YMA Team Picnic',
+                description: 'YAI and YMA team at a picnic event.',
+                category: 'community'
+            },
+            {
+                src: 'images/dentistry practice .JPG',
+                title: 'Dentistry Practice',
+                description: 'YMA members participating in dentistry practice.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/medical professionals panel.JPG',
+                title: 'Medical Professionals Panel',
+                description: 'YMA members at a medical professionals panel.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/yma new zealand research clinical event.png',
+                title: 'YMA New Zealand Research Clinical Event',
+                description: 'YMA members at a research clinical event in New Zealand.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/EEG demo at nYU Langone.JPG',
+                title: 'EEG Demo at NYU Langone',
+                description: 'YMA members at an EEG (electroencephalogram) demo at NYU Langone.',
+                category: 'training'
+            },
+            {
+                src: 'images/yma-office-of-the-mayor.jpg',
+                title: 'YMA at the Office of the Mayor',
+                description: 'YMA members at the Office of the Mayor, presenting YMA\'s work.',
+                category: 'presentations'
+            },
+            {
+                src: 'images/YMA event at NYU Child Study Center.JPG',
+                title: 'YMA Event at NYU Child Study Center',
+                description: 'YMA members at an event at the NYU Child Study Center.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/students at yma-nyu medical panel.JPG',
+                title: 'Students at YMA-NYU Medical Panel',
+                description: 'Students at the YMA-NYU medical panel.',
                 category: 'presentations'
             }
         ];

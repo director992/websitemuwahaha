@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="js/base-path.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Youth Medical Association</title>
@@ -74,7 +73,7 @@
                     <p style="color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Our Story</p>
                     <h2 style="font-size: 2.25rem; color: var(--navy); margin-bottom: 1.5rem; line-height: 1.3;">From Vision to Global Impact</h2>
                     <p style="color: var(--charcoal); line-height: 1.8;">Youth Medical Association was founded by Rayhan Mehal, a student at The Bronx High School of Science, driven by a firsthand understanding of healthcare's transformative power.</p>
-                    <p style="color: var(--charcoal); line-height: 1.8;">At age four, a hospital stay revealed to him the dedication and compassion of medical professionals. This experience, combined with his grandmother's work as a physician in Bangladesh, inspired a lifelong commitment to medicine and to creating opportunities for young people everywhere.</p>
+                    <p style="color: var(--charcoal); line-height: 1.8;">At age four, a hospital stay revealed to him the dedication and compassion of medical professionals. This experience, combined with his grandmother's work as a physician, inspired a lifelong commitment to medicine and to creating opportunities for young people everywhere.</p>
                     <p style="color: var(--charcoal); line-height: 1.8;">Upon entering a specialized high school, he observed stark disparities in funding and opportunities across NYC schools. Students from other districts shared how difficult it was to access career opportunities and internships. The vision became clear: every student deserves equitable access to pursue their interests.</p>
                     <p style="color: var(--charcoal); line-height: 1.8;">YMA was founded to bridge this gap, creating a supportive global community where aspiring healthcare professionals can thrive regardless of their background.</p>
                 </div>
@@ -101,7 +100,7 @@
                     </div>
                     <div style="padding: 1.5rem; background: var(--warm-gray); border-radius: 12px; border-left: 4px solid var(--deep-blue);">
                         <h3 style="color: var(--deep-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">Vision</h3>
-                        <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">To be the world's leading organization for students exploring careers in medicine, research, engineering, and business, providing the support, mentorship, and opportunities needed to succeed.</p>
+                        <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">To provide accessible support, mentorship, and hands-on opportunities for students exploring careers in medicine, research, engineering, and business—helping them build the skills and connections needed to pursue their goals.</p>
                     </div>
                 </div>
             </div>
@@ -273,6 +272,21 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
 </body>
 </html> 

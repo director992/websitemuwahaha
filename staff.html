@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Our Team | Youth Medical Association</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,16 +12,21 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/logo/YMA Logo.png" alt="Youth Medical Association" style="height: 40px; margin-right: 10px;">
-                <h2>Youth Medical Association</h2>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="images/logo/YMA Logo.png" alt="Youth Medical Association">
+                <span class="logo-text">Youth Medical Association</span>
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item has-dropdown">
                     <a href="about.html" class="nav-link">About Us</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="yai.html">Youth Academic Initiative</a></li>
+                        <li><a href="mayor-office.html">Office of the Mayor</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="chapters.html" class="nav-link">Chapters</a>
@@ -36,16 +41,10 @@
                     <a href="press.html" class="nav-link">Press</a>
                 </li>
                 <li class="nav-item">
-                    <a href="yai.html" class="nav-link">Youth Academic Initiative</a>
-                </li>
-                <li class="nav-item">
-                    <a href="mayor-office.html" class="nav-link">Office of the Mayor</a>
-                </li>
-                <li class="nav-item">
                     <a href="get-involved.html" class="nav-link">Get Involved</a>
                 </li>
                 <li class="nav-item">
-                    <a href="mailto:director@yma.institute" class="nav-link btn-primary">Contact</a>
+                    <a href="contact.html" class="nav-link btn-primary">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -57,7 +56,7 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%), url('images/IMG_0027.JPG') center/cover;">
+    <section class="page-header" style="background: linear-gradient(135deg, rgba(30, 58, 138, 0.45) 0%, rgba(30, 64, 175, 0.4) 100%), url('images/IMG_0027.JPG') center/cover;">
         <div class="container">
             <h1>Meet Our Team</h1>
             <p>Leaders who support students interested in healthcare.</p>
@@ -67,7 +66,7 @@
     <!-- Leadership Team -->
     <section class="content-section">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #1e293b;">Executive Leadership</h2>
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #1e293b;">Leadership</h2>
             
             <!-- Founder Profile -->
             <div style="background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 3rem;">
@@ -79,41 +78,50 @@
                     </div>
                     <div>
                         <h3 style="font-size: 2rem; color: #1e293b; margin-bottom: 0.5rem;">Rayhan Mehal</h3>
-                        <p style="color: #2563eb; font-weight: 600; font-size: 1.25rem; margin-bottom: 1.5rem;">Founder, Director & President<br>Chief of International Affairs</p>
-                        <p style="color: #64748b; line-height: 1.7; margin-bottom: 1rem;">Rayhan Mehal is a senior at The Bronx High School of Science and the founder, director, and president of Youth Medical Association. A dedicated advocate for equitable access to medical education, he has built YMA from a local initiative into a global organization serving over 4,000 students across 40+ chapters.</p>
-                        <p style="color: #64748b; line-height: 1.7; margin-bottom: 1rem;">His commitment to medicine was shaped by an early hospital experience at age four and his grandmother's work as a physician. Under his leadership, YMA has partnered with institutions including Columbia Engineering, NYU Langone, and the NYC Mayor's Office to provide mentorship, hands-on training, and career development opportunities for aspiring healthcare professionals.</p>
-                        <p style="color: #64748b; line-height: 1.7;">Rayhan oversees strategic growth, chapter coordination, and program development. He plans to pursue medicine with interests in cardiology, emergency medicine, and neurology.</p>
+                        <p style="color: var(--primary-blue); font-weight: 600; font-size: 1.25rem; margin-bottom: 1.5rem;">Founder, Director & President</p>
+                        <p style="color: #64748b; line-height: 1.7; margin-bottom: 1rem;">Rayhan Mehal is a senior at The Bronx High School of Science and founded the Youth Medical Association to expand access to medical education for students worldwide. As Founder, Director, and President, he serves as the backbone of YMA operations, providing strategic oversight and day-to-day leadership across the organization.</p>
+                        <p style="color: #64748b; line-height: 1.7; margin-bottom: 1rem;">Rayhan oversees all chapters, teams, and directors, ensuring alignment with YMA's mission and maintaining the quality and consistency of programs across 40+ chapters and four continents. He coordinates events, manages institutional relationships, facilitates communication between chapter leaders and staff, and drives program development and implementation. His work spans event planning, logistics, outreach, and event coordination with institutions, keeping YMA's global network running smoothly.</p>
+                        <p style="color: #64748b; line-height: 1.7;">Through his leadership, YMA delivers mentorship, hospital visits, hands-on training, and career development opportunities to thousands of students pursuing careers in medicine, research, engineering, and related fields.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Core Team -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                <div style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
-                        <i class="fas fa-user" style="font-size: 2.5rem; color: white;"></i>
-                    </div>
-                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Victor Li</h3>
-                    <p style="color: #10b981; font-weight: 600; margin-bottom: 1rem;">Director of Content Creation</p>
-                    <p style="color: #64748b; line-height: 1.6;">Victor is a junior at The Bronx High School of Science who oversees all content YMA utilizes for weekly meetings. He helps create educational materials and manages content development with his team. In his free time, Victor enjoys playing guitar and reading.</p>
-                </div>
-
-                <div style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem;">
-                        <img src="images/Bio/kimberly.nguyen.bio.jpeg" alt="Kimberly Nguyen" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Kimberly Nguyen</h3>
-                    <p style="color: #8b5cf6; font-weight: 600; margin-bottom: 1rem;">Coordinator of International Affairs</p>
-                    <p style="color: #64748b; line-height: 1.6;">Kimberly collaborates with chapter leaders to structure responsibilities and lead the coordination of research university tours and hospital volunteer programs worldwide. She is also responsible for guiding high school students to create their own YMA chapters in their respective countries, not only starting their chapters but also helping them build their social media presence to connect with other likeminded individuals on a global scale. Through her work as the Coordinator of International Affairs, Kimberly hopes to expand equitable access to education.</p>
-                </div>
-
-                <div style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 1.5rem;">
+            <div class="core-team-grid">
+                <div>
+                    <div>
                         <img src="images/IMG_7609.jpeg" alt="Isha Agarwal" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Isha Agarwal</h3>
-                    <p style="color: #0ea5e9; font-weight: 600; margin-bottom: 1rem;">Director of Human Resources & Chapter President, YMA India</p>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">Director of Human Resources</p>
                     <p style="color: #64748b; line-height: 1.6;">Isha Agarwal serves as Director of Human Resources at YMA International and Chapter President of YMA India, where she leads strategic growth, leadership development, and national chapter operations. She has overseen large-scale fundraising initiatives, organized healthcare seminars in collaboration with medical professionals, and mobilized student volunteers across on-ground and virtual programs. Her work focuses on building structured, accountable, and mission-driven systems that strengthen youth-led impact in healthcare and community service. With a strong interest in healthcare research and organizational strategy, Isha is committed to developing sustainable leadership pipelines within global student networks.</p>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="images/Bio/kimberly.nguyen.bio.jpeg" alt="Kimberly Nguyen" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Kimberly Nguyen</h3>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">Coordinator of International Affairs</p>
+                    <p style="color: #64748b; line-height: 1.6;">Kimberly collaborates with chapter leaders to structure responsibilities and lead the coordination of research university tours and hospital volunteer programs worldwide. She is also responsible for guiding high school students to create their own YMA chapters in their respective countries, not only starting their chapters but also helping them build their social media presence to connect with other likeminded individuals on a global scale. Through her work as the Coordinator of International Affairs, Kimberly hopes to expand equitable access to education.</p>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="images/muntha zaman.JPG" alt="Muntha Zaman" style="width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.2);">
+                    </div>
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Muntha Zaman</h3>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">Director of Outreach</p>
+                    <p style="color: #64748b; line-height: 1.6;">Muntha Zaman is a freshman at New York University and serves as Director of Outreach. She facilitates outreach operations across YMA's network, connecting with schools, communities, and institutions to expand awareness of YMA's programs. She helps coordinate events by managing logistics, communicating with institutional contacts and chapter leaders, and ensuring that outreach initiatives run smoothly. Her work supports YMA's growth and helps bring medical education opportunities to more students.</p>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="images/victor li.png" alt="Victor Li" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="color: #1e293b; margin-bottom: 0.5rem;">Victor Li</h3>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">Director of Content Creation</p>
+                    <p style="color: #64748b; line-height: 1.6;">Victor Li is a freshman at the University of Michigan and serves as Director of Content Creation. He plans weekly lessons for YMA meetings, develops educational materials on medical specialties and healthcare topics, and coordinates informational content for members across chapters. He works with the content team to ensure that presentations, handouts, and resources are accurate, engaging, and aligned with YMA's educational goals. His work supports members as they explore careers in medicine and related fields.</p>
                 </div>
             </div>
         </div>
@@ -124,76 +132,76 @@
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #1e293b;">Our Departments</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid #2563eb;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--primary-blue);">
                     <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="width: 50px; height: 50px; background: #2563eb; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                        <div style="width: 50px; height: 50px; background: var(--primary-blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                             <i class="fas fa-pen-nib" style="color: white; font-size: 1.25rem;"></i>
                         </div>
-                        <h3 style="color: #2563eb; margin: 0;">Content Creation</h3>
+                        <h3 style="color: var(--primary-blue); margin: 0;">Content Creation</h3>
                     </div>
                     <p style="color: #64748b; line-height: 1.6;">Develops educational materials, presentations, and resources for weekly meetings and special events. Creates engaging content that helps members learn about various medical specialties and current healthcare topics.</p>
                 </div>
 
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid #10b981;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--primary-blue);">
                     <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="width: 50px; height: 50px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                        <div style="width: 50px; height: 50px; background: var(--primary-blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                             <i class="fas fa-bullhorn" style="color: white; font-size: 1.25rem;"></i>
                         </div>
-                        <h3 style="color: #10b981; margin: 0;">Outreach</h3>
+                        <h3 style="color: var(--primary-blue); margin: 0;">Outreach</h3>
                     </div>
-                    <p style="color: #64748b; line-height: 1.6;">Manages communications, social media presence, and community partnerships. Works to expand YMA's reach and connect with students, healthcare professionals, and educational institutions.</p>
+                    <p style="color: #64748b; line-height: 1.6;">Manages communications, social media presence, and community engagement. Works to expand YMA's reach and connect with students, healthcare professionals, and educational institutions.</p>
                 </div>
 
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid #f59e0b;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--deep-blue);">
                     <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="width: 50px; height: 50px; background: #f59e0b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                        <div style="width: 50px; height: 50px; background: var(--deep-blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                             <i class="fas fa-map-marker-alt" style="color: white; font-size: 1.25rem;"></i>
                         </div>
-                        <h3 style="color: #f59e0b; margin: 0;">Chapters</h3>
+                        <h3 style="color: var(--deep-blue); margin: 0;">Chapters</h3>
                     </div>
                     <p style="color: #64748b; line-height: 1.6;">Coordinates chapters across different schools and regions. Supports chapter leaders, helps spread awareness about YMA's opportunities, and serves as local points of contact for interested students.</p>
                 </div>
 
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid #06b6d4;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 4px solid var(--navy);">
                     <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                        <div style="width: 50px; height: 50px; background: #06b6d4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                        <div style="width: 50px; height: 50px; background: var(--navy); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                             <i class="fas fa-globe" style="color: white; font-size: 1.25rem;"></i>
                         </div>
-                        <h3 style="color: #06b6d4; margin: 0;">International Affairs</h3>
+                        <h3 style="color: var(--navy); margin: 0;">International Affairs</h3>
                     </div>
-                    <p style="color: #64748b; line-height: 1.6;">Manages global partnerships and international expansion efforts. Works to connect YMA with medical organizations and educational institutions worldwide to broaden our impact.</p>
+                    <p style="color: #64748b; line-height: 1.6;">Manages international relationships and expansion efforts. Works to connect YMA with medical organizations and educational institutions worldwide to broaden our impact.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Join Our Team -->
-    <section class="content-section">
+    <section class="content-section" style="background: var(--warm-gray);">
         <div class="container">
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 3rem; text-align: center; color: white;">
-                <h2 style="margin-bottom: 1.5rem; font-size: 2.5rem;">Join Our Leadership Team</h2>
-                <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">We're always looking for students to join our leadership team and help expand YMA's work.</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                    <div>
-                        <h4 style="margin-bottom: 1rem; font-size: 1.25rem;">What We Look For</h4>
-                        <ul style="text-align: left; list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #10b981; margin-right: 0.5rem;"></i> Passion for medicine and healthcare</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #10b981; margin-right: 0.5rem;"></i> Strong leadership and communication skills</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #10b981; margin-right: 0.5rem;"></i> Commitment to helping others succeed</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #10b981; margin-right: 0.5rem;"></i> Dedication to YMA's mission and values</li>
+            <div class="join-leadership-cta">
+                <h2>Join Our Leadership Team</h2>
+                <p>We're always looking for students to join our leadership team and help expand YMA's work.</p>
+                <div class="join-leadership-grid">
+                    <div class="join-leadership-card">
+                        <h4>What We Look For</h4>
+                        <ul>
+                            <li>Passion for medicine and healthcare</li>
+                            <li>Strong leadership and communication skills</li>
+                            <li>Commitment to helping others succeed</li>
+                            <li>Dedication to YMA's mission and values</li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 style="margin-bottom: 1rem; font-size: 1.25rem;">Benefits of Leadership</h4>
-                        <ul style="text-align: left; list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: #f59e0b; margin-right: 0.5rem;"></i> Develop valuable leadership skills</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: #f59e0b; margin-right: 0.5rem;"></i> Build your resume and college applications</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: #f59e0b; margin-right: 0.5rem;"></i> Network with healthcare professionals</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: #f59e0b; margin-right: 0.5rem;"></i> Make a meaningful impact in your community</li>
+                    <div class="join-leadership-card">
+                        <h4>Benefits of Leadership</h4>
+                        <ul>
+                            <li>Develop valuable leadership skills</li>
+                            <li>Gain hands-on experience that stands out</li>
+                            <li>Network with healthcare professionals</li>
+                            <li>Make a meaningful impact in your community</li>
                         </ul>
                     </div>
                 </div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScIdRBzFzZrx4ONaxSOiyH2w5i6WvKl9VqKjoDZ_yZzNYQlCA/viewform?usp=sharing&ouid=104748297163574303489" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background: white; color: #2563eb;">Learn How to Apply</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScIdRBzFzZrx4ONaxSOiyH2w5i6WvKl9VqKjoDZ_yZzNYQlCA/viewform?usp=sharing&ouid=104748297163574303489" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Learn How to Apply</a>
             </div>
         </div>
     </section>
@@ -229,7 +237,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Youth Medical Association International. All rights reserved.</p>
-                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3)</p>
+                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3) · <a href="mailto:director@yma.institute" style="color: #94a3b8; text-decoration: underline;">Our Non Profit Status Documentation</a></p>
             </div>
         </div>
     </footer>

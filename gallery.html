@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Photo Gallery | Youth Medical Association</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -174,15 +174,20 @@
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="yai.html">Youth Academic Initiative</a></li>
+                        <li><a href="mayor-office.html">Office of the Mayor</a></li>
+                    </ul>
+                </li>
                 <li><a href="chapters.html" class="nav-link">Chapters</a></li>
                 <li><a href="staff.html" class="nav-link">Staff</a></li>
                 <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
                 <li><a href="press.html" class="nav-link">Press</a></li>
-                <li><a href="yai.html" class="nav-link">Youth Academic Initiative</a></li>
-                <li><a href="mayor-office.html" class="nav-link">Office of the Mayor</a></li>
                 <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
-                <li><a href="mailto:director@yma.institute" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -207,7 +212,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Journey in Pictures</h2>
-                <p class="section-subtitle">From hands-on medical training to community outreach, explore the impactful moments that define Youth Medical Association</p>
+                <p class="section-subtitle">From hands-on medical training to community outreach, explore the impactful moments that define the Youth Medical Association</p>
             </div>
 
             <!-- Category Filters -->
@@ -264,6 +269,7 @@
                         <li><a href="press.html">Press</a></li>
                         <li><a href="yai.html">Youth Academic Initiative</a></li>
                         <li><a href="mayor-office.html">Office of the Mayor</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -275,7 +281,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Youth Medical Association International. All rights reserved.</p>
-                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3)</p>
+                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3) · <a href="mailto:director@yma.institute" style="color: #94a3b8; text-decoration: underline;">Our Non Profit Status Documentation</a></p>
             </div>
         </div>
     </footer>
@@ -303,25 +309,31 @@
             {
                 src: 'images/IMG_0027.JPG',
                 title: 'YMA Medical Facility Visit',
-                description: 'YMA members visiting modern medical facilities with distinctive red architectural elements',
+                description: 'YMA members on a medical facility tour, gaining exposure to clinical environments and healthcare infrastructure through our hospital visit program.',
+                category: 'hospital'
+            },
+            {
+                src: 'images/yma at nyu langone.JPG',
+                title: 'YMA at NYU Langone',
+                description: 'YMA events at NYU Langone give students hands-on learning through facility tours, presentations, and speakers from leading medical institutions.',
                 category: 'hospital'
             },
             {
                 src: 'images/IMG_0105.JPG',
                 title: 'NYU College of Dentistry Group Photo',
-                description: 'Large group photo at NYU College of Dentistry showcasing our partnership with medical institutions',
+                description: 'Through our collaboration with NYU College of Dentistry, YMA brings students behind the scenes at a leading dental school, connecting them with current students and faculty.',
                 category: 'hospital'
             },
             {
                 src: 'images/IMG_0168.JPG',
                 title: 'Mount Sinai Biomedical Engineering Institute',
-                description: 'YMA members exploring the Mount Sinai Biomedical Engineering Institute and learning about healthcare infrastructure.',
+                description: 'Through our work with Mount Sinai, YMA members tour the Biomedical Engineering Institute and learn how technology advances patient care.',
                 category: 'hospital'
             },
             {
                 src: 'images/IMG_0111.JPG',
                 title: 'Medical Facility Tour',
-                description: 'Students touring medical facilities and learning about modern healthcare environments',
+                description: 'YMA\'s hospital visit program gives students firsthand exposure to medical facilities and career paths in healthcare.',
                 category: 'hospital'
             },
             
@@ -329,25 +341,25 @@
             {
                 src: 'images/IMG_0038.JPG',
                 title: 'Educational Presentation Session',
-                description: 'Students attending educational presentations by medical professionals and researchers',
+                description: 'YMA hosts regular presentations where medical professionals and researchers share their expertise with aspiring healthcare students.',
                 category: 'presentations'
             },
             {
                 src: 'images/IMG_0039.JPG',
                 title: 'Medical Workshop',
-                description: 'Interactive workshop session with medical professionals presenting to YMA students',
+                description: 'YMA workshops connect students with practicing physicians for interactive learning and career guidance.',
                 category: 'presentations'
             },
             {
                 src: 'images/IMG_0455.JPG',
                 title: 'Neurology Event at NYU Langone',
-                description: 'Rayhan Mehal addressing students at NYU Langone regarding the Neurology event, alongside three doctors. Over 70 students from different countries attended, including Canada.',
+                description: 'YMA\'s neurology event at NYU Langone gave students hands-on learning through facility tours and presentations from speakers in the field.',
                 category: 'presentations'
             },
             {
                 src: 'images/IMG_0144.JPG',
                 title: 'Educational VR Demo at Mount Sinai',
-                description: "YMA's Victor Li participates in an educational VR demo at Mount Sinai.",
+                description: 'YMA members experience cutting-edge medical technology at Mount Sinai through our collaboration\'s VR and simulation demos.',
                 category: 'presentations'
             },
             
@@ -355,7 +367,7 @@
             {
                 src: 'images/IMG_0058.JPG',
                 title: 'Hands-On Medical Training',
-                description: 'Students participating in practical medical training sessions and skill-building activities',
+                description: 'YMA\'s hands-on training program gives students practical medical skills under the guidance of experienced professionals.',
                 category: 'training'
             },
             
@@ -363,19 +375,19 @@
             {
                 src: 'images/IMG_0079.JPG',
                 title: 'NYU College of Dentistry Tour',
-                description: 'YMA students touring NYU College of Dentistry alongside current NYU Dentistry students.',
+                description: 'Through our collaboration with NYU College of Dentistry, YMA enables students to tour facilities and connect with dental students and faculty.',
                 category: 'community'
             },
             {
                 src: 'images/IMG_0094.JPG',
                 title: 'Student Networking',
-                description: 'YMA students building connections and sharing experiences in medical education',
+                description: 'YMA fosters a global community where students build connections, share experiences, and support each other\'s medical education journeys.',
                 category: 'community'
             },
             {
                 src: 'images/IMG_0068 (1).JPG',
                 title: 'Medical Facility Group',
-                description: 'YMA leadership team at a medical facility during educational visits',
+                description: 'YMA leadership coordinates educational visits to medical facilities, expanding access for students across our chapter network.',
                 category: 'community'
             },
             
@@ -383,247 +395,241 @@
             {
                 src: 'images/20250419_175815_Original.jpeg',
                 title: 'YMA India Group Activities',
-                description: 'YMA India chapter members engaged in group activities and community building initiatives',
+                description: 'YMA India chapter builds community across multiple cities, bringing medical education and mentorship to students throughout the country.',
                 category: 'community'
             },
             {
                 src: 'images/IMG_2351.jpg',
                 title: 'YMA India Medical Education',
-                description: 'YMA India chapter participating in medical education and training programs',
+                description: 'YMA India expands our global impact through local medical education and training programs, working with hospitals and colleges.',
                 category: 'training'
             },
             {
                 src: 'images/IMG_2938.jpg',
                 title: 'YMA India Community Outreach',
-                description: 'YMA India chapter conducting community health awareness and outreach programs',
+                description: 'YMA India\'s community outreach brings health awareness and medical education to underserved communities.',
                 category: 'community'
             },
             {
                 src: 'images/IMG_9200 (1).jpg',
                 title: 'YMA India Medical Training Session',
-                description: 'YMA India chapter members participating in hands-on medical training and skill development',
+                description: 'YMA India delivers hands-on medical training and skill development, extending YMA\'s programs to students across the region.',
                 category: 'training'
             },
             {
                 src: 'images/3822e3c4-8c45-495c-bfc6-e156509c705c.JPG',
                 title: 'YMA India Chapter Meeting',
-                description: 'YMA India chapter conducting educational meetings and student mentorship sessions',
+                description: 'YMA India hosts educational meetings and mentorship sessions, supporting students as they explore careers in healthcare.',
                 category: 'presentations'
             },
             {
                 src: 'images/bake sales/bake sale 1.JPG',
                 title: 'YMA Bake Sale',
-                description: 'YMA members running a bake sale to raise funds for medical education programs and community outreach',
+                description: 'YMA chapters fundraise to support medical education programs, community outreach, and opportunities for students in underfunded districts.',
                 category: 'community'
             },
             {
                 src: 'images/bake sales/bake sale 2.JPG',
                 title: 'Bake Sale Fundraiser',
-                description: 'Community bake sale event supporting Youth Medical Association programs and student initiatives',
+                description: 'YMA fundraising events sustain our programs and create opportunities for students who lack access to medical education resources.',
                 category: 'community'
             },
             {
                 src: 'images/gift bag.JPG',
                 title: 'NYU Langone Goody Bag',
-                description: 'NYU Langone provides YMA members with a goody bag and snack after an event.',
+                description: 'YMA\'s collaboration with NYU Langone includes post-event support for students, reinforcing our commitment to accessible medical education.',
                 category: 'hospital'
             },
             {
                 src: 'images/IMG_9200.jpg',
                 title: 'Community Volunteering with Children',
-                description: 'YMA members volunteering with children in the community.',
+                description: 'YMA members give back through community volunteering, building civic engagement alongside their medical education.',
                 category: 'community'
             },
             {
                 src: 'images/University of Washington Tour 1.JPEG',
                 title: 'University of Washington Tour',
-                description: 'YMA members on a tour of the University of Washington.',
+                description: 'YMA\'s Department of Career Development expands beyond NYC. Our University of Washington tour connects West Coast members to academic and medical opportunities.',
                 category: 'presentations'
             },
             {
                 src: 'images/yma-team.jpg',
                 title: 'YMA Team',
-                description: 'The Youth Medical Association team.',
+                description: 'The YMA team coordinates programs, institutional relationships, and chapters to serve over 4,000 students worldwide.',
                 category: 'community'
             },
             {
                 src: 'images/yma fun activity.JPG',
                 title: 'YMA Fun Activity',
-                description: 'YMA members participating in a fun activity and community bonding event.',
+                description: 'YMA builds community through events that strengthen connections among students pursuing careers in medicine and related fields.',
                 category: 'community'
             },
             {
                 src: 'images/columbia-1.jpg',
                 title: 'Columbia University Event',
-                description: 'YMA members at a Department of Career Development event at Columbia University, touring the campus and learning about opportunities.',
+                description: 'YMA\'s Department of Career Development works with Columbia University to expose students to opportunities in engineering, computer science, law, and business.',
                 category: 'presentations'
             },
             {
                 src: 'images/columbia-2.jpg',
                 title: 'Columbia University Tour',
-                description: 'YMA members touring Columbia University as part of the Department of Career Development, learning about opportunities across engineering, computer science, law, and business.',
+                description: 'YMA expands beyond medicine. Our collaboration with Columbia introduces students to careers in engineering, computer science, law, and business.',
                 category: 'presentations'
             },
             {
                 src: 'images/yma cpr training at columbia.JPG',
                 title: 'YMA CPR Training at Columbia',
-                description: 'YMA members participating in CPR and first aid training at Columbia University.',
+                description: 'YMA\'s CPR and first aid certification program at Columbia gives students life-saving skills and official certifications.',
                 category: 'training'
-            },
-            {
-                src: 'images/yma at nyu langone.JPG',
-                title: 'YMA at NYU Langone',
-                description: 'Over 70 students from across the world joined YMA for this event at NYU Langone.',
-                category: 'hospital'
             },
             {
                 src: 'images/rayhan mehal shaking hands with dr. Kurzweil.JPG',
                 title: 'Rayhan Mehal with Dr. Kurzweil',
-                description: 'YMA founder Rayhan Mehal shaking hands with Dr. Kurzweil.',
+                description: 'YMA connects students with leading physicians like Dr. Kurzweil, building mentorship relationships that shape future healthcare leaders.',
                 category: 'presentations'
             },
             {
                 src: 'images/YMA community day at columbia.JPG',
                 title: 'YMA Community Day at Columbia',
-                description: 'YMA members at Community Day at Columbia University.',
+                description: 'YMA participates in Columbia\'s Community Day, strengthening our collaboration and expanding student access to university resources.',
                 category: 'community'
             },
             {
                 src: 'images/Kimberly Nguyen speaking with chapter applicants regarding starting and operating a chapter.JPG',
                 title: 'Kimberly Nguyen with Chapter Applicants',
-                description: 'Kimberly Nguyen speaking with chapter applicants regarding starting and operating a chapter.',
+                description: 'YMA\'s chapter expansion program guides students through starting and operating chapters, growing our global network of medical education opportunities.',
                 category: 'presentations'
             },
             {
                 src: 'images/YMA Event at the Icahn School of Medicine.JPG',
                 title: 'YMA Event at the Icahn School of Medicine',
-                description: 'YMA members at an event at the Icahn School of Medicine at Mount Sinai.',
+                description: 'Through our collaboration with the Icahn School of Medicine at Mount Sinai, YMA gives students access to one of the nation\'s leading medical institutions.',
                 category: 'hospital'
             },
             {
                 src: 'images/bake sales/yma leadership at nyu langone .JPG',
                 title: 'YMA Leadership at NYU Langone',
-                description: 'YMA leadership team at NYU Langone.',
+                description: 'YMA leadership coordinates events at NYU Langone, facilitating collaborations that bring students into clinical and academic settings.',
                 category: 'hospital'
             },
             {
                 src: 'images/YMA EMS training.JPG',
                 title: 'YMA EMS Training',
-                description: 'YMA members participating in Emergency Medical Services (EMS) training.',
+                description: 'YMA\'s EMS training program prepares students for emergency medical careers with hands-on experience and professional instruction.',
                 category: 'training'
             },
             {
                 src: 'images/fun balloon at columbia.JPG',
                 title: 'Fun Balloon at Columbia',
-                description: 'YMA members at a fun balloon activity at Columbia University.',
+                description: 'YMA events at Columbia combine learning with community building, helping students form lasting connections with peers and mentors.',
                 category: 'community'
             },
             {
                 src: 'images/yma leadership team at nyu langone.JPG',
                 title: 'YMA Leadership Team at NYU Langone',
-                description: 'The YMA leadership team at NYU Langone.',
+                description: 'YMA leadership facilitates institutional collaborations like NYU Langone, creating pathways for students into medical education.',
                 category: 'hospital'
             },
             {
                 src: 'images/research experiment with yma students in new zealand.png',
                 title: 'Research Experiment with YMA Students in New Zealand',
-                description: 'YMA students in New Zealand participating in a research experiment.',
+                description: 'YMA\'s international chapters extend our impact. Students in New Zealand gain research experience through our global network.',
                 category: 'training'
             },
             {
                 src: 'images/yma dentistry research lab.JPG',
                 title: 'YMA Dentistry Research Lab',
-                description: 'YMA members at a dentistry research lab.',
+                description: 'YMA\'s collaboration with institutions opens doors to research labs, giving students exposure to scientific inquiry and clinical applications.',
                 category: 'hospital'
             },
             {
                 src: 'images/volunteering with children.jpg',
                 title: 'Volunteering with Children',
-                description: 'YMA members volunteering with children in the community.',
+                description: 'YMA members give back through community volunteering, building civic engagement alongside their medical education.',
                 category: 'community'
             },
             {
                 src: 'images/Blood draw demonstration on Rayhan Mehal at NYU .JPG',
                 title: 'Blood Draw Demonstration at NYU',
-                description: 'Blood draw demonstration on YMA founder Rayhan Mehal at NYU.',
+                description: 'YMA\'s hands-on training at NYU includes clinical skill demonstrations, preparing students for real-world medical environments.',
                 category: 'training'
             },
             {
                 src: 'images/nyu orthopedics panel.JPG',
                 title: 'NYU Orthopedics Panel',
-                description: 'YMA members at the NYU orthopedics panel.',
+                description: 'YMA brings students to specialty panels at NYU, exposing them to orthopedics and other medical fields through expert discussions.',
                 category: 'presentations'
             },
             {
                 src: 'images/rayhan mehal with nyu dentistry students.JPG',
                 title: 'Rayhan Mehal with NYU Dentistry Students',
-                description: 'YMA founder Rayhan Mehal with NYU College of Dentistry students.',
+                description: 'YMA events connect students with dental students and faculty, building mentorship relationships that support career exploration.',
                 category: 'hospital'
             },
             {
                 src: 'images/YMA SWHS club meeting.JPG',
                 title: 'YMA SWHS Club Meeting',
-                description: 'YMA club meeting at SWHS.',
+                description: 'YMA chapters like SWHS host regular meetings, building local communities of students pursuing careers in healthcare.',
                 category: 'community'
             },
             {
                 src: 'images/YMA University of Washington tour 2 .jpg',
                 title: 'University of Washington Tour 2',
-                description: 'YMA members on a tour of the University of Washington.',
+                description: 'YMA\'s national reach includes tours at the University of Washington, connecting West Coast members to academic and medical opportunities.',
                 category: 'presentations'
             },
             {
                 src: 'images/YMA Team picnic .JPG',
                 title: 'YAI-YMA Team Picnic',
-                description: 'YAI and YMA team at a picnic event.',
+                description: 'YMA collaborates with YAI (Youth Academic Initiative) to support students across medical education and academic tutoring.',
                 category: 'community'
             },
             {
                 src: 'images/yma team picnic 2 .JPG',
                 title: 'YAI-YMA Team Picnic',
-                description: 'YAI and YMA team at a picnic event.',
+                description: 'YMA collaborates with YAI (Youth Academic Initiative) to support students across medical education and academic tutoring.',
                 category: 'community'
             },
             {
                 src: 'images/dentistry practice .JPG',
                 title: 'Dentistry Practice',
-                description: 'YMA members participating in dentistry practice.',
+                description: 'Through our work with dental programs, YMA gives students hands-on practice and exposure to oral healthcare careers.',
                 category: 'hospital'
             },
             {
                 src: 'images/medical professionals panel.JPG',
                 title: 'Medical Professionals Panel',
-                description: 'YMA members at a medical professionals panel.',
+                description: 'YMA hosts panels where medical professionals share career insights, helping students navigate paths in healthcare.',
                 category: 'presentations'
             },
             {
                 src: 'images/yma new zealand research clinical event.png',
                 title: 'YMA New Zealand Research Clinical Event',
-                description: 'YMA members at a research clinical event in New Zealand.',
+                description: 'YMA\'s New Zealand chapter brings research and clinical experiences to students, extending our global impact to Oceania.',
                 category: 'presentations'
             },
             {
                 src: 'images/EEG demo at nYU Langone.JPG',
                 title: 'EEG Demo at NYU Langone',
-                description: 'YMA members at an EEG (electroencephalogram) demo at NYU Langone.',
+                description: 'YMA\'s collaboration with NYU Langone includes demos of diagnostic technology like EEG, exposing students to neurology and clinical tools.',
                 category: 'training'
             },
             {
                 src: 'images/yma-office-of-the-mayor.jpg',
                 title: 'YMA at the Office of the Mayor',
-                description: 'YMA members at the Office of the Mayor, presenting YMA\'s work.',
+                description: 'YMA\'s collaboration with the NYC Mayor\'s Office connects students from underfunded districts to medical opportunities and health resources.',
                 category: 'presentations'
             },
             {
                 src: 'images/YMA event at NYU Child Study Center.JPG',
                 title: 'YMA Event at NYU Child Study Center',
-                description: 'YMA members at an event at the NYU Child Study Center.',
+                description: 'Through our collaboration with the NYU Child Study Center, YMA exposes students to child and adolescent mental health and developmental medicine.',
                 category: 'hospital'
             },
             {
                 src: 'images/students at yma-nyu medical panel.JPG',
                 title: 'Students at YMA-NYU Medical Panel',
-                description: 'Students at the YMA-NYU medical panel.',
+                description: 'YMA\'s collaborative panel with NYU brings students face-to-face with physicians and medical students for career guidance.',
                 category: 'presentations'
             }
         ];

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>About Us | Youth Medical Association</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,16 +12,21 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <img src="images/logo/YMA Logo.png" alt="Youth Medical Association" style="height: 40px; margin-right: 10px;">
-                <h2>Youth Medical Association</h2>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="images/logo/YMA Logo.png" alt="Youth Medical Association">
+                <span class="logo-text">Youth Medical Association</span>
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item has-dropdown">
                     <a href="about.html" class="nav-link active">About Us</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="yai.html">Youth Academic Initiative</a></li>
+                        <li><a href="mayor-office.html">Office of the Mayor</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="chapters.html" class="nav-link">Chapters</a>
@@ -36,16 +41,10 @@
                     <a href="press.html" class="nav-link">Press</a>
                 </li>
                 <li class="nav-item">
-                    <a href="yai.html" class="nav-link">Youth Academic Initiative</a>
-                </li>
-                <li class="nav-item">
-                    <a href="mayor-office.html" class="nav-link">Office of the Mayor</a>
-                </li>
-                <li class="nav-item">
                     <a href="get-involved.html" class="nav-link">Get Involved</a>
                 </li>
                 <li class="nav-item">
-                    <a href="mailto:director@yma.institute" class="nav-link btn-primary">Contact</a>
+                    <a href="contact.html" class="nav-link btn-primary">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -61,7 +60,7 @@
         <div class="container">
             <h1>About Youth Medical Association</h1>
             <p style="font-style: italic; margin-bottom: 0.5rem; letter-spacing: 0.05em;">Passion. Perceive. Pursue.</p>
-            <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7;">A global nonprofit empowering the next generation of healthcare leaders through education, mentorship, and hands-on experience.</p>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7;">A global nonprofit founded in 2022, empowering the next generation of healthcare leaders through education, mentorship, and hands-on experience.</p>
         </div>
     </section>
 
@@ -72,10 +71,9 @@
                 <div>
                     <p style="color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Our Story</p>
                     <h2 style="font-size: 2.25rem; color: var(--navy); margin-bottom: 1.5rem; line-height: 1.3;">From Vision to Global Impact</h2>
-                    <p style="color: var(--charcoal); line-height: 1.8;">Youth Medical Association was founded by Rayhan Mehal, a student at The Bronx High School of Science, driven by a firsthand understanding of healthcare's transformative power.</p>
-                    <p style="color: var(--charcoal); line-height: 1.8;">At age four, a hospital stay revealed to him the dedication and compassion of medical professionals. This experience, combined with his grandmother's work as a physician, inspired a lifelong commitment to medicine and to creating opportunities for young people everywhere.</p>
-                    <p style="color: var(--charcoal); line-height: 1.8;">Upon entering a specialized high school, he observed stark disparities in funding and opportunities across NYC schools. Students from other districts shared how difficult it was to access career opportunities and internships. The vision became clear: every student deserves equitable access to pursue their interests.</p>
-                    <p style="color: var(--charcoal); line-height: 1.8;">YMA was founded to bridge this gap, creating a supportive global community where aspiring healthcare professionals can thrive regardless of their background.</p>
+                    <p style="color: var(--charcoal); line-height: 1.8;">The Youth Medical Association was founded in 2022 at The Bronx High School of Science to address disparities in access to medical education and career opportunities across NYC schools. Students from underfunded districts often lacked exposure to healthcare careers, mentorship, and hands-on experiences available at better-resourced schools.</p>
+                    <p style="color: var(--charcoal); line-height: 1.8;">YMA was created to bridge this gap. Today, the organization serves over 4,000 students across 40+ chapters worldwide, hosting regular events and programs at Albert Einstein College of Medicine, Columbia University, Mount Sinai, NYU Langone, the NYC Mayor's Office, and other institutions. Rayhan Mehal, a senior at Bronx Science, serves as founder and director.</p>
+                    <p style="color: var(--charcoal); line-height: 1.8;">Our programs provide mentorship, hospital visits, CPR training, research exposure, and career development support. Every student deserves equitable access to explore their interests. YMA exists to make that possible.</p>
                 </div>
                 <div style="position: relative;">
                     <img src="images/IMG_0058.JPG" alt="YMA medical training session" style="width: 100%; max-width: 420px; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.12);">
@@ -100,10 +98,27 @@
                     </div>
                     <div style="padding: 1.5rem; background: var(--warm-gray); border-radius: 12px; border-left: 4px solid var(--deep-blue);">
                         <h3 style="color: var(--deep-blue); margin-bottom: 0.75rem; font-size: 1.1rem;">Vision</h3>
-                        <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">To provide accessible support, mentorship, and hands-on opportunities for students exploring careers in medicine, research, engineering, and business—helping them build the skills and connections needed to pursue their goals.</p>
+                        <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">To provide accessible support, mentorship, and hands-on opportunities for students exploring careers in medicine, research, engineering, and business, helping them build the skills and connections needed to pursue their goals.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Introduction Video -->
+    <section class="content-section" style="background: var(--light-blue);">
+        <div class="container">
+            <p style="text-align: center; color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Get to Know Us</p>
+            <h2 style="text-align: center; margin-bottom: 1.5rem; font-size: 2rem; color: var(--navy);">Watch Our Introduction</h2>
+            <a href="https://youtu.be/gPOapocRJEk" target="_blank" rel="noopener noreferrer" class="intro-video-link">
+                <div class="intro-video-thumb">
+                    <img src="https://img.youtube.com/vi/gPOapocRJEk/maxresdefault.jpg" alt="Watch YMA Introduction Video" onerror="this.src='https://img.youtube.com/vi/gPOapocRJEk/hqdefault.jpg'">
+                    <div class="intro-video-play">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#1e3a8a"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
+                <p class="intro-video-label">Watch on YouTube</p>
+            </a>
         </div>
     </section>
 
@@ -118,14 +133,14 @@
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3>Compassion</h3>
-                    <p>We believe exceptional healthcare professionals are driven by genuine care and empathy, values we cultivate through our partnerships with medical professionals.</p>
+                    <p>We believe exceptional healthcare professionals are driven by genuine care and empathy, values we cultivate through our collaboration with medical professionals.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
                     <h3>Excellence</h3>
-                    <p>We maintain rigorous standards in our programs and partnerships with leading medical institutions.</p>
+                    <p>We maintain rigorous standards in our programs and in our work with leading medical institutions.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -165,32 +180,32 @@
             <p style="text-align: center; color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Our Programs</p>
             <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.25rem; color: var(--navy);">What We Do</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #1e40af; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #1e40af; margin-bottom: 0.75rem; font-size: 1.15rem;">Department of Career Development</h3>
-                    <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Beyond medicine: our Career Development department supports students in computer science, engineering, law, and business. We partner with Columbia Engineering and host events across diverse fields.</p>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--deep-blue); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--deep-blue); margin-bottom: 0.75rem; font-size: 1.15rem;">Department of Career Development</h3>
+                    <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Beyond medicine: our Career Development department supports students in computer science, engineering, law, and business. We work with Columbia Engineering and host events across diverse fields.</p>
                 </div>
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #2563eb; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #2563eb; margin-bottom: 0.75rem; font-size: 1.15rem;">Educational Programs</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-blue); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.15rem;">Educational Programs</h3>
                     <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Weekly meetings featuring discussions on medical specialties, current public health issues, and presentations by medical professionals.</p>
                 </div>
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #10b981; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #10b981; margin-bottom: 0.75rem; font-size: 1.15rem;">Mentorship Network</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-blue); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.15rem;">Mentorship Network</h3>
                     <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">We connect high school students with college students, medical students, and practicing physicians for guidance and career advice.</p>
                 </div>
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #f59e0b; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #f59e0b; margin-bottom: 0.75rem; font-size: 1.15rem;">Hands-On Experiences</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--deep-blue); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--deep-blue); margin-bottom: 0.75rem; font-size: 1.15rem;">Hands-On Experiences</h3>
                     <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Hospital visits, shadowing experiences, and practical training (including CPR certification) led by experienced professionals.</p>
                 </div>
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #8b5cf6; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #8b5cf6; margin-bottom: 0.75rem; font-size: 1.15rem;">Leadership Development</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--navy); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--navy); margin-bottom: 0.75rem; font-size: 1.15rem;">Leadership Development</h3>
                     <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Leadership roles and team positions that develop organizational and management skills essential for future professionals.</p>
                 </div>
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #ef4444; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #ef4444; margin-bottom: 0.75rem; font-size: 1.15rem;">Community Outreach</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--deep-blue); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--deep-blue); margin-bottom: 0.75rem; font-size: 1.15rem;">Community Outreach</h3>
                     <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Community service and fundraising initiatives that give back while building character and civic engagement.</p>
                 </div>
-                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid #06b6d4; transition: box-shadow 0.3s ease;">
-                    <h3 style="color: #06b6d4; margin-bottom: 0.75rem; font-size: 1.15rem;">College Preparation</h3>
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-blue); transition: box-shadow 0.3s ease;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.15rem;">College Preparation</h3>
                     <p style="color: var(--charcoal); line-height: 1.7; margin: 0;">Guidance on college applications, pre-med programs, and medical school preparation through our experienced mentors.</p>
                 </div>
             </div>
@@ -204,16 +219,36 @@
                 <div>
                     <p style="color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">By the Numbers</p>
                     <h2 style="font-size: 2.25rem; color: var(--navy); margin-bottom: 1.5rem; line-height: 1.3;">Our Growing Impact</h2>
-                    <p style="color: var(--charcoal); line-height: 1.8;">Since our founding, Youth Medical Association has grown into a global community of over 4,000 students across 40+ chapters worldwide.</p>
-                    <p style="color: var(--charcoal); line-height: 1.8;">Our partnerships with Columbia Engineering, NYU Langone, the New York Fire Department (FDNY), and the Sophie Davis Biomedical Education Program provide members with unparalleled opportunities across medicine, research, and beyond.</p>
+                    <p style="color: var(--charcoal); line-height: 1.8;">Since our founding, the Youth Medical Association has grown into a global community of over 4,000 students across 40+ chapters worldwide.</p>
+                    <p style="color: var(--charcoal); line-height: 1.8;">Through our collaboration with Albert Einstein College of Medicine, Columbia University, Mount Sinai, NYU Langone, the New York Fire Department (FDNY), and the Sophie Davis Biomedical Education Program, we provide members with mentorship, hospital tours, hands-on training, and research exposure across medicine and related fields.</p>
                     <p style="color: var(--charcoal); line-height: 1.8;">We maintain a supportive, collaborative environment where students explore their path, develop leadership skills, and build lasting connections with peers and mentors across the globe.</p>
                     <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem;">
                         <a href="chapters.html" class="btn btn-primary">View Our Chapters</a>
-                        <a href="staff.html" class="btn btn-secondary">Meet Our Team</a>
+                        <a href="staff.html" class="btn btn-secondary">View Leadership</a>
                     </div>
                 </div>
                 <div>
                     <img src="images/IMG_0105.JPG" alt="YMA group at medical facility" style="width: 100%; max-width: 420px; height: auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.12);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Initiatives -->
+    <section class="content-section">
+        <div class="container">
+            <p style="text-align: center; color: var(--primary-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">Programs & Initiatives</p>
+            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2.25rem; color: var(--navy);">Related Programs</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid var(--border-light); display: flex; flex-direction: column;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.25rem;">Youth Academic Initiative</h3>
+                    <p style="color: var(--charcoal); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">An affiliated organization of YMA offering free SHSAT tutoring and academic support in Algebra, Chemistry, Biology, and Geometry for students in underfunded communities. YAI has served 400+ students through remote and in-person programs.</p>
+                    <a href="yai.html" class="btn btn-primary" style="align-self: flex-start;">Learn More</a>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid var(--border-light); display: flex; flex-direction: column;">
+                    <h3 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.25rem;">Office of the Mayor</h3>
+                    <p style="color: var(--charcoal); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">YMA's collaboration with the NYC Mayor's Office connects students from underfunded districts to medical opportunities, health education, and resources. The Medical Exposure Initiative brings mentorship and health resources to students who need them most.</p>
+                    <a href="mayor-office.html" class="btn btn-primary" style="align-self: flex-start;">Learn More</a>
                 </div>
             </div>
         </div>
@@ -226,8 +261,8 @@
                 <h2>Ready to Join Our Global Community?</h2>
                 <p style="font-size: 1.1rem; opacity: 0.95;">Join 4,000+ students worldwide pursuing careers in medicine, research, engineering, law, business, and related fields.</p>
                 <div class="cta-buttons">
-                    <a href="chapters.html" class="btn btn-primary">Find Your Chapter</a>
-                    <a href="staff.html" class="btn btn-secondary">Meet Our Leadership</a>
+                    <a href="get-involved.html" class="btn btn-primary">Get Involved</a>
+                    <a href="chapters.html" class="btn btn-outline">Find Your Chapter</a>
                 </div>
             </div>
         </div>
@@ -256,6 +291,7 @@
                         <li><a href="press.html">Press</a></li>
                         <li><a href="yai.html">Youth Academic Initiative</a></li>
                         <li><a href="mayor-office.html">Office of the Mayor</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -267,7 +303,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Youth Medical Association International. All rights reserved.</p>
-                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3)</p>
+                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3) · <a href="mailto:director@yma.institute" style="color: #94a3b8; text-decoration: underline;">Our Non Profit Status Documentation</a></p>
             </div>
         </div>
     </footer>

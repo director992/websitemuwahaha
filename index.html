@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Youth Medical Association</title>
     <meta name="description" content="YMA supports young people pursuing careers in medicine, research, engineering, law, business, and related fields.">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/logo/YMA Logo.png">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -20,15 +20,20 @@
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="yai.html">Youth Academic Initiative</a></li>
+                        <li><a href="mayor-office.html">Office of the Mayor</a></li>
+                    </ul>
+                </li>
                 <li><a href="chapters.html" class="nav-link">Chapters</a></li>
                 <li><a href="staff.html" class="nav-link">Staff</a></li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="press.html" class="nav-link">Press</a></li>
-                <li><a href="yai.html" class="nav-link">Youth Academic Initiative</a></li>
-                <li><a href="mayor-office.html" class="nav-link">Office of the Mayor</a></li>
                 <li><a href="get-involved.html" class="nav-link">Get Involved</a></li>
-                <li><a href="mailto:director@yma.institute" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -39,7 +44,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('images/IMG_0038.JPG');">
+    <section class="hero" style="background: linear-gradient(135deg, rgba(30, 58, 138, 0.45) 0%, rgba(30, 64, 175, 0.4) 100%), url('images/yma at nyu langone.JPG') center/cover;">
         <div class="container">
             <div class="hero-content">
                 <h1>Supporting Youth Across the Globe</h1>
@@ -66,7 +71,7 @@
                 <div class="mission-text">
                     <h2>Our Mission</h2>
                     <p>We support young people in pursuing their careers across medicine, research, engineering, law, business, computer science, and related fields.</p>
-                    <p>Through partnerships with institutions like Columbia Engineering, NYU Langone, and others, we help students develop skills and gain hands-on experience across many fields.</p>
+                    <p>Through our work with institutions like Albert Einstein College of Medicine, Columbia University, Mount Sinai, NYU Langone, and others, we help students develop skills and gain hands-on experience across many fields.</p>
                 </div>
                 <div class="stats-grid">
                     <div class="stat-item">
@@ -83,6 +88,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Introduction Video -->
+    <section class="section" style="background: var(--light-blue);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Youth Medical Association</h2>
+                <p class="section-subtitle">Watch our introduction video to learn more about our mission, programs, and impact.</p>
+            </div>
+            <a href="https://youtu.be/gPOapocRJEk" target="_blank" rel="noopener noreferrer" class="intro-video-link">
+                <div class="intro-video-thumb">
+                    <img src="https://img.youtube.com/vi/gPOapocRJEk/maxresdefault.jpg" alt="Watch YMA Introduction Video" onerror="this.src='https://img.youtube.com/vi/gPOapocRJEk/hqdefault.jpg'">
+                    <div class="intro-video-play">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#1e3a8a"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
+                <p class="intro-video-label">Watch on YouTube</p>
+            </a>
         </div>
     </section>
 
@@ -141,7 +165,7 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <h3>Department of Career Development</h3>
-                    <p>Not just medicine. Our Career Development team supports students interested in computer science, engineering, law, and business too. We've partnered with Columbia Engineering and host events across many fields.</p>
+                    <p>Not just medicine. Our Career Development team supports students interested in computer science, engineering, law, and business too. We collaborate with Columbia Engineering and host events across many fields.</p>
                 </div>
             </div>
         </div>
@@ -152,9 +176,16 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Recent Activities</h2>
-                <p class="section-subtitle">Events and partnerships across medicine, research, engineering, and more. We've worked with Columbia Engineering, NYU, and others.</p>
+                <p class="section-subtitle">Events and programs across medicine, research, engineering, and more. We host regular events with Albert Einstein College of Medicine, Columbia University, Mount Sinai, NYU Langone, and others.</p>
             </div>
             <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-image" style="background-image: url('images/yma at nyu langone.JPG')"></div>
+                    <div class="activity-content">
+                        <h3>YMA at NYU Langone</h3>
+                        <p>Through our collaboration with NYU Langone, we bring students from around the world to medical events, hospital tours, and hands-on experiences at one of the nation's leading medical centers.</p>
+                    </div>
+                </div>
                 <div class="activity-card">
                     <div class="activity-image" style="background-image: url('images/IMG_0027.JPG')"></div>
                     <div class="activity-content">
@@ -177,10 +208,10 @@
                     </div>
                 </div>
                 <div class="activity-card">
-                    <div class="activity-image" style="background-image: url('images/IMG_0455.JPG')"></div>
+                    <div class="activity-image" style="background-image: url('images/columbia-1.jpg')"></div>
                     <div class="activity-content">
                         <h3>Columbia Engineering & Career Development</h3>
-                        <p>Our Department of Career Development expands beyond medicine. We've partnered with Columbia Engineering and host events for students interested in engineering, computer science, law, and business.</p>
+                        <p>Our Department of Career Development expands beyond medicine. We work with Columbia Engineering and host events for students interested in engineering, computer science, law, and business.</p>
                     </div>
                 </div>
                 <div class="activity-card">
@@ -205,7 +236,7 @@
                         <i class="fas fa-user-plus"></i>
                         Join YMA Today
                     </a>
-                    <a href="mailto:director@yma.institute" class="btn btn-outline">
+                    <a href="contact.html" class="btn btn-outline">
                         <i class="fas fa-envelope"></i>
                         Get in Touch
                     </a>
@@ -247,7 +278,7 @@
                         <li><a href="yai.html">Youth Academic Initiative</a></li>
                         <li><a href="mayor-office.html">Office of the Mayor</a></li>
                         <li><a href="#programs">Programs</a></li>
-                        <li><a href="mailto:director@yma.institute">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -259,7 +290,7 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Youth Medical Association International. All rights reserved.</p>
-                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3)</p>
+                <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">501(c)(3) · <a href="mailto:director@yma.institute" style="color: #94a3b8; text-decoration: underline;">Our Non Profit Status Documentation</a></p>
             </div>
         </div>
     </footer>
